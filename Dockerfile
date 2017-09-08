@@ -1,5 +1,6 @@
-FROM ubuntu:14.04 
-# No GPU support
+FROM nvidia/cuda:8.0-cudnn6-devel
+# GPU support
+
 
 RUN mkdir OpenCV && cd OpenCV
 
