@@ -1,5 +1,5 @@
-FROM nvidia/cuda:8.0-cudnn6-devel
-# GPU support
+FROM python:3.6
+ # No GPU support
 
 RUN apt-get update && \
         apt-get install -y \
