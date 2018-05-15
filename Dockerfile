@@ -2,7 +2,7 @@ FROM nvidia/cuda:9.0-devel-ubuntu16.04
 # GPU support
 RUN \
   apt-get update && \
-  apt-get install -y python3 python3-pip python3-dev python3-virtualenv && \ 
+  apt-get install -y python3 python3-pip python3-dev libssl-dev libffi-dev python3-venv && \ 
   apt-get install -y \
         build-essential \
         cmake \
