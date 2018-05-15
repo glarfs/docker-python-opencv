@@ -3,8 +3,7 @@ FROM nvidia/cuda:9.0-devel-ubuntu16.04
 RUN \
   apt-get update && \
   apt-get install -y python3 python3-pip python3-dev python3-virtualenv && \ 
-  apt-get update && \
-        apt-get install -y \
+  apt-get install -y \
         build-essential \
         cmake \
         git \
@@ -20,10 +19,10 @@ RUN \
         libtiff-dev \
         libjasper-dev \
         libavformat-dev \
-        libpq-dev \
+        libpq-dev && \
         rm -rf /var/lib/apt/lists/*
 
-RUN pip install numpy
+RUN pip3 install numpy
 
 WORKDIR /
 ENV OPENCV_VERSION="3.4.1"
